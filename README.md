@@ -18,18 +18,18 @@ expo install @notifee/react-native
 }
 ```
 
-3. Run this command in your terminal:
+3. Run this command in your terminal depending on your platform:
+
+   - iOS: `expo run:ios`
+   - Android: `expo run:android`
+
+It will ask for a package name, enter: `Posture.App`.
+
+4. Run this command in your terminal:
 
 ```shell
 expo prebuild
 ```
-
-It will ask for a package name, enter: `Posture.App`.
-
-4. Run this command in your terminal depending on your platform:
-
-   - iOS: `expo build:ios`
-   - Android: `expo build:android`
 
 5. Import the `notifee` package.
 
@@ -52,12 +52,6 @@ Hint: [documentation](https://notifee.io/docs/react-native/notifications/notific
 
 ### 🤼‍♂️ Customize Notifications
 
-Customize the notification by adding the `assets/posture.gif` image to the notification.
-
-Hint: [documentation](https://notifee.io/docs/react-native/notifications/notification-customization)
-
-### 🌶 Changing The Sound
-
-In the assets folder, you have a sound file called `sound.wav`. Change the notification sound to `sound.wav`.
+Customize the notification by adding this image `https://149362086.v2.pressablecdn.com/wp-content/uploads/2019/12/healthy-posture.jpg` image to the notification.
 
 Hint: [documentation](https://notifee.io/docs/react-native/notifications/notification-customization)
