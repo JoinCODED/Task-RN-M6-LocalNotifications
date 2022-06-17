@@ -1,6 +1,9 @@
 {
   "expo": {
     "name": "posture-app",
+    "plugins": [
+      "@notifee/react-native"
+    ],
     "slug": "posture-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,7 +27,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "Posture.App"
     },
     "web": {
       "favicon": "./assets/favicon.png"
