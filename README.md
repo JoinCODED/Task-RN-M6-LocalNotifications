@@ -1,33 +1,61 @@
-# TASK-NAME
-
-This is the template for tasks. These repos are the starting points and instructions for students to explore a concept.
+# Fix Your Posture 🪑
 
 ## Instructions
-- Fork and clone [this repository](https://github.com/JoinCODED/{REPO_NAME}) to your `Development` folder.
 
-## Objective and end result
-- Write the objective of the task.
-- If there are any images, make sure you resize them to around 880px maximum width. **Don't add big images**
+- Fork and clone [this repository](https://github.com/JoinCODED/Task-RN-M6-LocalNotifications) to your `Development` folder.
 
-![screenshot](https://tenor.com/xNjE.gif)
+1. Install the `notifee` package.
 
+```shell
+expo install @notifee/react-native
+```
 
-### 🍋 The basic challenge title
+2. Add the `notifee` package to your `app.json` file.
 
-- Step 1
-- Step 2
-- Step 3
+```json
+{
+  "plugins": ["@notifee/react-native"]
+}
+```
 
+3. Run this command in your terminal:
 
-### 🤼‍♂️ The hard challenge title
+```shell
+expo prebuild
+```
 
-- Step 1
-- Step 2
-- Step 3
+It will ask for a package name, enter: `Posture.App`.
 
+4. Run this command in your terminal depending on your platform:
 
-### 🌶 The Extreme challenge title 
+   - iOS: `expo build:ios`
+   - Android: `expo build:android`
 
-- Step 1
-- Step 2
-- Step 3
+5. Import the `notifee` package.
+
+```js
+import notifee, { EventType } from '@notifee/react-native';
+```
+
+6. Create a trigger notification that runs every 40 mins.
+7. Create an android channel for the notification.
+8. Pass the android ios and android object.
+9. In the android object, add the channel. and the small icon.
+10. Make sure that clicking the notification will open the app.
+11. Pass this function to the start button.
+
+### 🍋 Stop Notifications
+
+Add a cancel button that cancels the notification trigger.
+
+Hint: [documentation](https://notifee.io/docs/react-native/notifications/notification-triggers)
+
+### 🤼‍♂️ Customize Notifications
+
+Customize the notification by adding the `assets/posture.gif` image to the notification.
+
+Hint: [documentation](https://notifee.io/docs/react-native/notifications/notification-customization)
+
+### 🌶 Changing The Sound
+
+In the assets folder, you have a sound file called `sound.wav`. Change the notification sound to `sound.wav`.
