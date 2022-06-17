@@ -59,3 +59,5 @@ Hint: [documentation](https://notifee.io/docs/react-native/notifications/notific
 ### 🌶 Changing The Sound
 
 In the assets folder, you have a sound file called `sound.wav`. Change the notification sound to `sound.wav`.
+
+Hint: [documentation](https://notifee.io/docs/react-native/notifications/notification-customization)
